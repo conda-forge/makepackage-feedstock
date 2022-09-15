@@ -1,5 +1,5 @@
 {% set name = "makepackage" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/makepackage-{{ version }}.tar.gz
-  sha256: f720187ef8186582be8f2fdc7ae7556e25c7e876afe0ce51b306069d8ad221f7
+  sha256: 6ff136e650b6c4c5d29932072e94a9f598cc90c96f277a1ed00913e6920555e7
 
 build:
   entry_points:
