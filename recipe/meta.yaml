@@ -19,11 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
+    - setuptools-scm
+    - setuptools >=61.0
   run:
     - easycheck
-    - python >=3.6
-
+    - python >=3.7
+    
 test:
   imports:
     - makepackage
