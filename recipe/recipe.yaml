@@ -23,7 +23,7 @@ build:
 requirements:
   host:
     - pip
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - setuptools-scm
     - setuptools >=61.0
   run:
@@ -34,12 +34,12 @@ tests:
   - python:
       imports:
         - makepackage
+      pip_check: true
+      python_version: ${{ python_min }}.*
   - requirements:
       run:
-        - pip
-        - python ${{ python_min }}
+        - python ${{ python_min }}.*
     script:
-      - pip check
       - makepackage --help
 
 about:
